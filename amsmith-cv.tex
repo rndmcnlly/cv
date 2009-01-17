@@ -3,6 +3,10 @@
 
 \documentclass[10pt]{article}
 \usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{hyperref}
+
 \textheight=9.0in
 \pagestyle{empty}
 \raggedbottom
@@ -10,10 +14,11 @@
 \setlength{\tabcolsep}{0in}
 \begin{document}
 
-\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
-\large \textbf{Adam Marshall Smith}  & (831) 295-2624 \\
-5105 Cordoy Lane & adam@adamsmith.as \\
-San Jose, CA 95124 &  \\
+\begin{tabular*}{6.5in}{ll@{\extracolsep{\fill}}r}
+\multirow{3}{*}{\includegraphics[width=0.5in]{matrix}} & 
+\textbf{Adam Marshall Smith} & (831) 295-2624 \\
+& 5105 Cordoy Lane & adam@adamsmith.as \\
+& San Jose, CA 95124 &  {\footnotesize (search for ``rndmcnlly'')}\\
 \end{tabular*}
 \\
 
@@ -27,32 +32,18 @@ San Jose, CA 95124 &  \\
         \textbf{University of California Santa Cruz} & Santa Cruz, CA \\
         Ph.D., Computer Science, in progress (fourth year) & \\
     \end{tabular*}
-%  \begin{itemize}
-%    \item \textbf{Notable courses}: advanced artificial intelligence, advanced machine learning, combinatorial algorithms, interactive narrative, bayesian statistics, computational photography, computer vision for mobile devices, game design seminar, programming languages, analysis of algorithms
-%    \item \textbf{Notable course projects}: theoretical basis and method for computing transient global illumination, interactive fiction remake of existing artificial reality game, new (but unremarkable) algorithms for 3SAT, enhancing low-light photography using infrared illumination, data mining for Netflix Prize using additional IMDB metadata, reinforcement learning agent for a real-time video game, soft-body physics simulator with rich scripting language
-%
-%     \end{itemize} % ucsc grad details
 
     \item 
     \begin{tabular*}{6in}{l@{\extracolsep{\fill}}r}
         \textbf{University of California Santa Cruz} & Santa Cruz, CA \\
         B.S. with Honors, Computer Science (GPA 3.62), 2005 & \\
   \end{tabular*}
-  
-%  \begin{itemize}
-%         \item Honors in the major and Comprehensive honors
-%         \item \textbf{Notable courses}: computer architecture, advanced programming, computational models, analysis of algorithms, technical writing, compiler design, operating systems, artificial intelligence, game ai, ai for music, embedded software, comparative programming languages, advanced linear algebra, graphics, animation, scientific visualization, computer game design
-%    \item \textbf{Notable course projects}: ad-hoc wireless router using LEGO Mindstorms, unified virtual memory and disk cache in DLXOS, rhythmic improvisation using binary pitch trees in LISP, peer-to-peer board game using sockets in Java, adaptive game playing agents in LISP, 3D flocking simulation in Python with OpenGL  
-%     \end{itemize} % ucsc ugrad details
     
   \item 
     \begin{tabular*}{6in}{l@{\extracolsep{\fill}}r}
         \textbf{De Anza College} & Cupertino, CA \\
         Transfered Credits, 2003 & \\
   \end{tabular*}
-%  \begin{itemize}
-%         \item \textbf{Notable courses}: advanced C programming, advanced x86 assembly programming, all upper-level mathematics, all upper-level physics, experimental economics, spanish
-%     \end{itemize} % deanza details
 
 \end{itemize} % education
 
@@ -89,6 +80,7 @@ San Jose, CA 95124 &  \\
     
 \end{itemize} % Research
 
+\newpage
 {\large \textbf{Teaching}}
 \begin{itemize}
 
@@ -145,7 +137,7 @@ San Jose, CA 95124 &  \\
     
 \end{itemize} % Teaching
 
-
+\newpage
 {\large \textbf{Internships}}
 
 \begin{itemize}
@@ -159,7 +151,7 @@ San Jose, CA 95124 &  \\
   \begin{itemize}
     \item Developed parser, name resolver, and type checker for Protocol Buffers
 language
-    \item Helped explore solutions for many-language parsing
+    \item Helped explore solutions for unified parsing of many languages
     \item Contributed to design of \emph{large}-scale, distributed notgunnasay
   \end{itemize}
 
@@ -184,55 +176,55 @@ language
   \end{tabular*}
   
   \begin{itemize}
-    \item Integrated hardware-based, distributed, image compositing system into visualiztion software (paraview)
-    \item Developed instruction-level-optimized software solution for comparisoni on cluster  (mpi/openib)
+    \item Integrated hardware-based, image compositing system into visualiztion software
+    \item Developed reference software implementation  for comparison on cluster
     \item Created interactive visualizations of huge materials science datasets (paraview)
     \item Organized experiments across a non-uniform cluster of eight nodes
     \item Performed technical demonstration for dignitaries
   \end{itemize}
 
-
-
 \item
     \begin{tabular*}{6in}{l@{\extracolsep{\fill}}r}
-        \textbf{Educational Associate} & Summer 2005 \\
+        \textbf{Educational Associate (Intern)} & Summer 2005 \\
         NASA Ames Research Center, Intelligent Robotics Group & Moffet Field, CA \\
     \end{tabular*}
 
     \begin{itemize}
-    \item Developed and documented test procedures for PhaseSpace motion tracking system (\LaTeX)
-    \item Evaluated system accuracy and precision (data collection, analysis)
-    \item Created automated data analysis tool chain for sensor data (perl, gmake, gnuplot)
-    \item Integrated sensor into test rover sensor system (c++, ice, java)
-    \item Proposed new filtering method to improve sensor robustness (octave)
+    \item Developed and documented deploy/test procedures for motion tracking system
+    \item Created automated data analysis tool chain for sensor data
+    \item Integrated sensor into rover sensing infrastructure
+    \item Proposed and prototyped matched filtering to improve sensor robustness
     \end{itemize}
 
 
 \item
     \begin{tabular*}{6in}{l@{\extracolsep{\fill}}r}
-        \textbf{Programmer / Other} & Summer 2004 \\
+        \textbf{Consultant} & Summer 2004 \\
         Terracom Communications & Kigali, Rwanda \\
     \end{tabular*}  
 
     \begin{itemize}
-    \item Created and scheduled several automated web scrapers and log analyzers (perl)
-    \item Developed database driven mini-sites (php, templating libraries)
-    \item Created full text search tool with stemming for multiple mini-sites (mysql)
-    \item Researched sources and setup automated filtering for a dynamic tech-news site (perl)
-    \item Setup and secured servers (linux)
-    \item Proposed and implemented new web-caching policy yielding vastly increased performance, noticed by clients (squid)
-    \item Worked 80+ hours/week in Kigali, meeting deadlines and completing side-projects
+    \item Created and scheduled several automated web scrapers and log analyzers
+    \item Developed database driven mini-sites
+    \item Created full text search tool with stemming for multiple mini-sites
+    \item Researched sources and setup self-updating tech-news site
+    \item
+      Worked 80+ hours/week in Kigali, meeting deadlines, completing
+      side-projects, climbing mountains, acting in movies, pirating media, and eating
+      locally
     \end{itemize}
 
 \end{itemize} % internships
 
 \newpage
-{\large \textbf{High-Density Additional Information}}
-\begin{description}
-\item [Well-developed personal interests:] {\small computational light science (the intersection of computer graphics, computer vision, and physics), experimential electronic music, procedural visual media, next-next-gen web, network hacking, computer game design, geometry, abstract algebra, advanced physics, backpacking, snowboarding, mountain biking, philosophy of mathematics/science/systems/art/hacking, unconferences (*Camps), hackathons (SuperHappyDevHouse)}
-\item [Some recreational projects (completed alone or with friends):] {\small invisible hand (prototype for document camera system that removes foreground objects from scene to improve readability), the.cubing.game (simple video game based on realistic physical simulation with original art, sound effects, and music), codepoem (a series of abstract, concrete code poems juxtaposing code for a context-free design grammar with one of its visual compositions), slut-o-meter (SafeSearch reporting gimmick), AjaxWar (distributed, multi-player,  real-time strategy game made using only javascript on web client before AJAXy support libraries existed), data visualizer for There.com participants, DriveByCTF (real-life wardriving game with centralized scoring through the web), spammer.pl (automation of laptop duties in wardriving game), GoGetter (javascript-based web crawler and collage generator), GifGif (a steganographic image codec), RadAudio (wavelet based audio codec with psychoacoustic modeling), markov.lisp (instant messaging log re-synthesizer), karamari.lisp (prototype for text adventure remake of the popular Katamari Damacy), POSIX Monkey Puncher (thread programming tutorial that is also silly game), Winter (music visualizer created at informal demo-party), cicada-client (WiFi reporting tool using DNS for clandestine upstream data transport)}
-\item [Technical skill dump:] {\small html/xhtml/xml/xslt/css, sdl, opengl, osg, design patterns, prolog, matlab/octave, lisp/scheme, java/c++/c\#, python, ocaml, perl, php, make, bash, flex/bison, ms office, \LaTeX (for papers and presentations)}
-\end{description}
+{\large \textbf{High-Density Supplemental Information}}
+
+\begin{minipage}{\textwidth}
+\includegraphics[width=2.25in,page=1]{internal}
+\includegraphics[width=2.25in,page=2]{internal}
+\includegraphics[width=2.25in,page=3]{internal}
+\end{minipage}
+
 
 {\large \textbf{References}}\\
 
@@ -240,7 +232,8 @@ language
 \begin{itemize}
   \item Michael Mateas (Research Advisor from UCSC)
   \item James Davis (Teaching Mentor from UCSC)
-  \item Eric Haugh (Mentor from Google)
+  \item Theodora Yeung (Mentor from Google, WA)
+  \item Eric Haugh (Mentor from Google, CA)
   \item Carolyn Connor-Davenport (Mentor from LANL)
   \item Terry Fong (Mentor from NASA)
   \item Jo\"{e}l Franusic (Friend, Coworker from Terracom, education/hacker/art philosophy discussion cohort)
