@@ -1,5 +1,6 @@
 \documentclass[12pt]{article}
 \usepackage{fullpage}
+\usepackage{graphicx}
 \pagestyle{empty}
 
 \begin{document}
@@ -7,7 +8,7 @@
 \section*{Language Paradigms}
 For each area, I have used one or more languages in a non-trivial project and
 would feel comfortable implementing a simple new language in this area
-(including a parser, name resolver, type checker, type inference, code
+(including a minimal parser, name resolver, type checker, type inference, code
 emitter, interpreter, and/or garbage collector as needed).
 
 \begin{itemize}
@@ -27,9 +28,10 @@ emitter, interpreter, and/or garbage collector as needed).
 \section*{Development Settings}
 For each area, I have developed multiple non-trivial projects in this setting before.
 \begin{itemize}
-  \item enterprise
+  \item enterprise (with technical writing)
+  \item educational (base-code for student assignments)
   \item research
-  \item hacking
+  \item casual hacking (in groups and alone)
   \item live demo
 \end{itemize}
 
@@ -37,52 +39,58 @@ For each area, I have developed multiple non-trivial projects in this setting be
 \section*{Well-developed Personal Interests}
 \begin{itemize}
   \item hacker culture
-  \item recreational academic reading in mathematics and physics 
   \item learning programming languages and language implementation techniques
-  \item livecoding (writing code, live, while it is running, while the audience
-watches)
+  \item livecoding (writing code, live, while it is running, while the audience watches)
   \item experimental electronic music (both analysis/synthesis)
   \item procedural art (writing code that makes art)
+  \item mathematics (probability theory, differential geometry, chaos theory)
 \end{itemize}
 
-\subsection*{Selected Recreational Projects}
-\begin{itemize}
-  \item regexio.com (regular expression debugging tool generates example matches, no example text needed)
-  \item invisible hand (prototype for document camera system that removes foreground objects from scene to improve readability)
-  \item the.cubing.game (simple video game based on realistic physical simulation with original art, sound effects, and music)
-  \item slut-o-meter (SafeSearch reporting gimmick)
-  \item AjaxWar (distributed, multi-player,  real-time strategy game made using only javascript on web client before AJAXy support libraries existed)
-  \item DriveByCTF (real-life wardriving game with centralized scoring through the web)
-  \item spammer.pl (automation of laptop in wardriving game)
-  \item GoGetter (javascript-based web crawler and collage generator)
-  \item GifGif (a steganographic image codec)
-  \item RadAudio (wavelet based audio codec with psychoacoustic modeling)
-  \item markov.lisp (instant messaging log re-synthesizer)
-  \item katamari.lisp (prototype for text adventure remake of the popular Katamari Damacy)
-  \item POSIX Monkey Puncher (thread programming tutorial that is also silly game)
-  \item Winter (music visualizer created at informal demo-party)
-  \item Project Cicada (WiFi reporting tool using DNS for clandestine upstream data transport)
-\end{itemize}
-
-\newpage
 \section*{Selected Musical Compositions}
 \begin{itemize}
+  \item 3po-demo.pd (a livecoded bangin' trance piece in PureData)
   \item soundless music (an experiment in composing without listening)
   \item bilingualism (a livecoding session where a synthesizer and composer module were developed simultaneously using PureData and Impromptu)
-  \item endless claims (a procedural music piece involving generation and performance of random lyrics via text-to-speech library)
-  \item idm.ck (a infinite stream of super-gritty intelligent dance music, generated sample-by-sample in ChucK) 
+  \item endless claims (a procedural music piece involving generation and performance of random lyrics via text-to-speech library, later repimplemented using web technologies)
+  \item idm.ck (a infinite stream of super-gritty intelligent dance music, generated from the sample-level upwards in ChucK) 
   \item /music/reason (25+ full-length tracks and countless loops of original, synth-heavy, experimental electronic music created with Reason) 
   \item /music/hardware (a sampling of experimentations with various pieces of electronic music hardware)
 \end{itemize}
 
 \section*{Selected Visual Compositions}
 \begin{itemize}
-  \item blurry\_maps (a scalable web service that provides a front end for Google Maps which tastefully reinterprets the original map tiles)
+  \item i5 (an interactive interated function system animation using html5/javascript)
+  \item blurry\_maps (a web service that provides a front end for Google Maps which tastefully reinterprets the original map tiles)
   \item boxen (a series of path-traced procedural cube sculptures, printed and framed)
   \item codepoem (a series of abstract, concrete code poems juxtaposing code for a context-free design grammar with one of its visual compositions)
   \item spraw (an artistic mis-application of lossy image codecs to wavelet-encoded images)
 \end{itemize}
 
+\newpage
+\subsection*{Selected Recreational Projects}
+\begin{itemize}
+  \item Ethereal Dialpad (an interactive synthesizer toy for Android using custom DSP codes)
+  \item Iteration (a generative art app for Android using iterated function systems)
+  \item Sinistrum (a three-player strategic videogame with multiple levels of deception)
+  \item cfml (a unique context-free programming language for livecoding music)
+  \item regexio.com (regular expression debugging tool generates example matches)
+  \item invisible hand (prototype for document camera system that automatically ignores foreground objects)
+  \item the.cubing.game (a physics-based videogame with original art, sound effects, and music)
+  \item slut-o-meter (SafeSearch reporting gimmick)
+  \item AjaxWar (distributed, multi-player,  real-time strategy game made using only javascript on web client before AJAXy support libraries existed)
+  \item DriveByCTF (real-life wardriving game with centralized scoring through the web)
+  \item RadAudio (wavelet based audio codec with psychoacoustic modeling)
+  \item markov.lisp (instant messaging log re-synthesizer)
+  \item katamari.lisp (prototype for text adventure remake of the popular Katamari Damacy)
+  \item Project Cicada (WiFi reporting tool using DNS for clandestine upstream data transport)
+\end{itemize}
 
+%\subsection*{A base case. At last!}
+\subsection*{Recursion? Oh noes!}
+\begin{minipage}{\textwidth}
+\includegraphics[width=2in,page=1]{internal_rec}
+\includegraphics[width=2in,page=2]{internal_rec}
+\includegraphics[width=2in,page=3]{internal_rec}
+\end{minipage}
 
 \end{document}
